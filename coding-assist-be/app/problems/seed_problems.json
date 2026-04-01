@@ -1,0 +1,154 @@
+[
+  {
+    "id": "two-sum",
+    "title": "Two Sum",
+    "difficulty": "easy",
+    "description": "Given a list of integers nums and an integer target, return the indices of two numbers that add up to target. Print two indices in increasing order, or -1 if no pair exists.",
+    "topics": ["arrays", "hash-map"],
+    "constraints": ["2 <= n <= 100000", "-1e9 <= nums[i], target <= 1e9"],
+    "learning_objectives": ["Use complements for O(n) lookup", "Track seen values with indices"],
+    "starter_code": "def solve():\n    n = int(input().strip())\n    nums = list(map(int, input().split()))\n    target = int(input().strip())\n    # print two indices or -1\n    pass\n",
+    "function_name": "solve",
+    "sample_tests": [
+      { "input": "4\n2 7 11 15\n9\n", "expected_output": "0 1" },
+      { "input": "3\n3 2 4\n6\n", "expected_output": "1 2" }
+    ],
+    "hidden_tests": [
+      { "input": "2\n3 3\n6\n", "expected_output": "0 1" },
+      { "input": "5\n1 2 3 4 5\n100\n", "expected_output": "-1" }
+    ]
+  },
+  {
+    "id": "valid-parentheses",
+    "title": "Valid Parentheses",
+    "difficulty": "easy",
+    "description": "Given a string containing only ()[]{} characters, print true if it is valid and false otherwise.",
+    "topics": ["stack", "strings"],
+    "constraints": ["1 <= len(s) <= 100000"],
+    "learning_objectives": ["Use stack for matching pairs", "Handle early mismatch exits"],
+    "starter_code": "def solve():\n    s = input().strip()\n    # print true or false\n    pass\n",
+    "function_name": "solve",
+    "sample_tests": [
+      { "input": "()[]{}\n", "expected_output": "true" },
+      { "input": "(]\n", "expected_output": "false" }
+    ],
+    "hidden_tests": [
+      { "input": "([{}])\n", "expected_output": "true" },
+      { "input": "(((()\n", "expected_output": "false" }
+    ]
+  },
+  {
+    "id": "maximum-subarray",
+    "title": "Maximum Subarray",
+    "difficulty": "medium",
+    "description": "Given an integer array, print the largest sum over all contiguous subarrays.",
+    "topics": ["dynamic-programming", "arrays"],
+    "constraints": ["1 <= n <= 200000", "-1e4 <= nums[i] <= 1e4"],
+    "learning_objectives": ["Apply Kadane's algorithm", "Track local vs global optimum"],
+    "starter_code": "def solve():\n    n = int(input().strip())\n    nums = list(map(int, input().split()))\n    # print max subarray sum\n    pass\n",
+    "function_name": "solve",
+    "sample_tests": [
+      { "input": "9\n-2 1 -3 4 -1 2 1 -5 4\n", "expected_output": "6" },
+      { "input": "1\n1\n", "expected_output": "1" }
+    ],
+    "hidden_tests": [
+      { "input": "5\n5 4 -1 7 8\n", "expected_output": "23" },
+      { "input": "3\n-3 -2 -5\n", "expected_output": "-2" }
+    ]
+  },
+  {
+    "id": "binary-search",
+    "title": "Binary Search",
+    "difficulty": "easy",
+    "description": "Given a sorted array and a target, print its index or -1 if not found.",
+    "topics": ["binary-search", "arrays"],
+    "constraints": ["1 <= n <= 100000"],
+    "learning_objectives": ["Maintain low/high boundaries", "Avoid off-by-one loops"],
+    "starter_code": "def solve():\n    n = int(input().strip())\n    nums = list(map(int, input().split()))\n    target = int(input().strip())\n    # print index or -1\n    pass\n",
+    "function_name": "solve",
+    "sample_tests": [
+      { "input": "6\n-1 0 3 5 9 12\n9\n", "expected_output": "4" },
+      { "input": "6\n-1 0 3 5 9 12\n2\n", "expected_output": "-1" }
+    ],
+    "hidden_tests": [
+      { "input": "1\n5\n5\n", "expected_output": "0" },
+      { "input": "4\n1 3 5 7\n1\n", "expected_output": "0" }
+    ]
+  },
+  {
+    "id": "climbing-stairs",
+    "title": "Climbing Stairs",
+    "difficulty": "easy",
+    "description": "You can climb 1 or 2 steps at a time. Given n, print the number of distinct ways to reach the top.",
+    "topics": ["dynamic-programming", "fibonacci"],
+    "constraints": ["1 <= n <= 45"],
+    "learning_objectives": ["Build iterative DP", "Recognize Fibonacci recurrence"],
+    "starter_code": "def solve():\n    n = int(input().strip())\n    # print number of ways\n    pass\n",
+    "function_name": "solve",
+    "sample_tests": [
+      { "input": "2\n", "expected_output": "2" },
+      { "input": "3\n", "expected_output": "3" }
+    ],
+    "hidden_tests": [
+      { "input": "5\n", "expected_output": "8" },
+      { "input": "10\n", "expected_output": "89" }
+    ]
+  },
+  {
+    "id": "product-except-self",
+    "title": "Product of Array Except Self",
+    "difficulty": "medium",
+    "description": "Given an integer array nums, print an array where each element is the product of all other elements. Print outputs space-separated.",
+    "topics": ["arrays", "prefix-suffix"],
+    "constraints": ["2 <= n <= 100000", "-30 <= nums[i] <= 30"],
+    "learning_objectives": ["Use prefix and suffix products", "Avoid division"],
+    "starter_code": "def solve():\n    n = int(input().strip())\n    nums = list(map(int, input().split()))\n    # print space-separated products\n    pass\n",
+    "function_name": "solve",
+    "sample_tests": [
+      { "input": "4\n1 2 3 4\n", "expected_output": "24 12 8 6" },
+      { "input": "4\n-1 1 0 -3\n", "expected_output": "0 0 3 0" }
+    ],
+    "hidden_tests": [
+      { "input": "2\n5 6\n", "expected_output": "6 5" },
+      { "input": "3\n0 0 2\n", "expected_output": "0 0 0" }
+    ]
+  },
+  {
+    "id": "longest-substring-without-repeat",
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "medium",
+    "description": "Given a string s, print the length of the longest substring without repeated characters.",
+    "topics": ["sliding-window", "hash-map", "strings"],
+    "constraints": ["0 <= len(s) <= 100000"],
+    "learning_objectives": ["Track moving window bounds", "Update last seen indices"],
+    "starter_code": "def solve():\n    s = input().rstrip(\"\\n\")\n    # print max length\n    pass\n",
+    "function_name": "solve",
+    "sample_tests": [
+      { "input": "abcabcbb\n", "expected_output": "3" },
+      { "input": "bbbbb\n", "expected_output": "1" }
+    ],
+    "hidden_tests": [
+      { "input": "pwwkew\n", "expected_output": "3" },
+      { "input": "\n", "expected_output": "0" }
+    ]
+  },
+  {
+    "id": "merge-intervals",
+    "title": "Merge Intervals",
+    "difficulty": "medium",
+    "description": "Given n intervals, merge overlapping intervals and print them as \"l r\" pairs separated by semicolons.",
+    "topics": ["sorting", "intervals"],
+    "constraints": ["1 <= n <= 100000"],
+    "learning_objectives": ["Sort by start time", "Maintain merged tail interval"],
+    "starter_code": "def solve():\n    n = int(input().strip())\n    intervals = [tuple(map(int, input().split())) for _ in range(n)]\n    # print merged intervals as: 1 6;8 10\n    pass\n",
+    "function_name": "solve",
+    "sample_tests": [
+      { "input": "4\n1 3\n2 6\n8 10\n15 18\n", "expected_output": "1 6;8 10;15 18" },
+      { "input": "2\n1 4\n4 5\n", "expected_output": "1 5" }
+    ],
+    "hidden_tests": [
+      { "input": "3\n1 2\n3 4\n5 6\n", "expected_output": "1 2;3 4;5 6" },
+      { "input": "3\n1 10\n2 3\n4 8\n", "expected_output": "1 10" }
+    ]
+  }
+]

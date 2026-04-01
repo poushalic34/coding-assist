@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+openai
+python-dotenv
+pytest
+httpx
+psycopg2-binary
+boto3
+PyJWT
+passlib[bcrypt]
