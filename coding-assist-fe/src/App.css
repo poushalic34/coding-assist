@@ -1,0 +1,321 @@
+.appShell {
+  min-height: 100vh;
+  padding: 1rem;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.authShell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: #0f172a;
+}
+
+.authPanel {
+  width: min(420px, 100%);
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.authInput {
+  width: 100%;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 0.55rem;
+  min-height: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 320px;
+  gap: 1rem;
+  align-items: start;
+}
+
+.centerColumn {
+  display: grid;
+  grid-template-rows: auto 420px auto;
+  gap: 1rem;
+}
+
+.panel {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 0.9rem;
+}
+
+.panelTitle {
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 0.45rem 0.55rem;
+  margin-bottom: 0.5rem;
+}
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.55rem;
+}
+
+.chipButton {
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+}
+
+.activeChip {
+  border-color: #38bdf8;
+}
+
+.problemList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.problemItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.55rem 0.65rem;
+  background: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.problemItem.active {
+  border-color: #38bdf8;
+  background: #0b2941;
+}
+
+.tag {
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.73rem;
+  text-transform: capitalize;
+}
+
+.tag.easy {
+  background: #064e3b;
+}
+
+.tag.medium {
+  background: #78350f;
+}
+
+.tag.hard {
+  background: #7f1d1d;
+}
+
+.muted {
+  color: #9ca3af;
+}
+
+.attemptCount {
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+.description {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.metaSection h4 {
+  margin: 0.6rem 0 0.25rem;
+}
+
+.metaSection ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.editorBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.editorActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editorContainer {
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 380px;
+}
+
+.primaryButton {
+  border: 1px solid #0ea5e9;
+  background: #0369a1;
+  color: #f8fafc;
+  border-radius: 8px;
+  padding: 0.48rem 0.8rem;
+  cursor: pointer;
+}
+
+.primaryButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.resultCard p,
+.hintCard p {
+  margin: 0.3rem 0;
+}
+
+.sampleResults ul {
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+}
+
+.passText {
+  color: #86efac;
+}
+
+.failText {
+  color: #fda4af;
+}
+
+.failedCase pre {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  padding: 0.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.assistantPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow: hidden;
+}
+
+.assistantHistory {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-right: 0.2rem;
+}
+
+.inputArea {
+  width: 100%;
+  min-height: 96px;
+  flex-shrink: 0;
+  resize: vertical;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 0.55rem;
+}
+
+.hintCard {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+.sourceBadge {
+  margin-left: 0.4rem;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.controlLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.modeSelect {
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 0.35rem 0.45rem;
+}
+
+.errorText {
+  color: #fca5a5;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .assistantPanel {
+    grid-column: 1 / -1;
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .centerColumn {
+    grid-template-rows: auto 350px auto;
+  }
+}
